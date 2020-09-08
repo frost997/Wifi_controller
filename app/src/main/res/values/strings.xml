@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">web_activity</string>
+    <string-array name="planets_array">
+        <item>sensordata</item>
+        <item>sensordata1</item>
+    </string-array>
+</resources>

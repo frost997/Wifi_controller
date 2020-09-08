@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "ID"
+        android:textSize="25sp"
+        android:id="@+id/data_id">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/data_id"
+        android:id="@+id/data_list"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Temp"
+            android:id="@+id/temp"
+            android:textSize="25sp">
+        </TextView>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "water_level"
+            android:textSize="25sp"
+            android:id="@+id/data_water_level">
+        </TextView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_list"
+        android:id="@+id/Gyroscope"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "time"
+        android:textAlignment="textEnd"
+        android:textSize="25sp"
+        android:id="@+id/Time_stamp"
+        android:layout_below="@id/Gyroscope">
+    </TextView>
+</RelativeLayout>
